@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url('/static/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/static/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Hubot Sans';
+    src:
+        url('/static/fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
+        url('/static/fonts/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+  font-family: 'Mona Sans';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    font-family: 'Mona Sans';
+}
+
+nav {
+    background-color: #303030;
+}
+
+.nav-link-custom {
+    color: #C1C1C1;
+    border: 0px!important;
+}
+
+.nav-link-custom:focus,
+.nav-link-custom:hover {
+    color: #ffffff !important;
+    border: 0px!important;
+}
+
+.custom-active {
+    color: #f4f4f4;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.dark {
+    background-color: #191919;
+}
+
+footer {
+    background-color: #191919;
+    margin-top: auto;
+}
+
+.h1,
+h1 {
+    font-family: 'Hubot Sans';
+    font-size: 3.815rem;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+.h2,
+h2 {
+    font-size: 3.052rem;
+    font-weight: bold;
+    color: #e9e9ea;
+}
+
+.h3,
+h3 {
+    font-size: 2.441rem;
+    font-weight: bold;
+    color: #e9e9ea;
+}
+
+.h4,
+h4 {
+    font-family: 'Hubot Sans';
+    font-size: 1.953rem;
+    color: #e9e9ea;
+}
+
+.h5,
+h5 {
+    font-size: 1.563rem;
+    color: #e9e9ea;
+}
+
+.h6,
+h6 {
+    font-size: 1.25rem;
+    color: #e9e9ea;
+}
+
+ul,
+p {
+    font-size: 1rem;
+    color: #c1c1c1;
+}
+
+.text-s {
+    font-size: 0.8rem;
+    color: #c1c1c1;
+}
+
+.text-xs {
+    font-size: 0.64rem;
+    color: #c1c1c1;
+}
+
+.img-fluid {
+    width: 50%;  /* The image will take up 50% of its container's width */
+    height: auto;  /* Height is auto to maintain the aspect ratio */
+}
+
+.full-height {
+    min-height: 100vh;  /* 100% of the viewport height */
+    flex-direction: column;
+}
