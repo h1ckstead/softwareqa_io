@@ -21,7 +21,6 @@ html {
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #303030;
@@ -122,17 +121,18 @@ p {
 }
 
 .img-fluid {
-    width: 80%;  /* The image will take up 50% of its container's width */
-    height: auto;  /* Height is auto to maintain the aspect ratio */
+    width: 80%;
+    height: auto;
 }
 
 .full-height {
-    min-height: 100vh;  /* 100% of the viewport height */
+    min-height: auto;
     flex-direction: column;
+    overflow: auto;
 }
 
 .half-page {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
