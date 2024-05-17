@@ -105,6 +105,12 @@ p {
     color: #c1c1c1;
 }
 
+@media (min-width: 1320px) {
+    .p-scale {
+        font-size: 1.3rem;
+    }
+}
+
 .text-s {
     font-size: 0.8rem;
     color: #c1c1c1;
@@ -116,11 +122,24 @@ p {
 }
 
 .img-fluid {
-    width: 50%;  /* The image will take up 50% of its container's width */
+    width: 80%;  /* The image will take up 50% of its container's width */
     height: auto;  /* Height is auto to maintain the aspect ratio */
 }
 
 .full-height {
     min-height: 100vh;  /* 100% of the viewport height */
     flex-direction: column;
+}
+
+.half-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  max-width: 600px;
+  width: 100%;
 }
